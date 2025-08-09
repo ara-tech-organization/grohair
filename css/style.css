@@ -20467,4 +20467,234 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 }
 
+/* HT Section */
+.ht-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ec2024;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+.treatment-heading {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a3d62;
+  text-align: center;
+}
+
+/* Treatment Boxes */
+.treatment-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.treatment-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.treatment-image {
+  flex: 1 1 300px;
+}
+
+.treatment-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-content {
+  flex: 2;
+}
+
+.treatment-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e272e;
+}
+
+.treatment-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.treatment-content ul li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .treatment-box,
+  .treatment-box.reverse {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .treatment-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Emi And Offers */
+
+.highlight-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #1e272e;
+}
+
+.highlight-section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.highlight-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ec2024;
+}
+
+.highlight-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: stretch; /* instead of center */
+  align-items: stretch;   /* ensures equal height in each row */
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers icon + text vertically */
+  background-color: #f4f6f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+  min-height: 160px; /* force equal card height */
+}
+
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0a3d62;
+}
+
+.feature p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+
+/* Portfolio Section Styling */
+.portfolio-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-info {
+  padding: 20px;
+}
+
+.portfolio-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+.treatment-image {
+  flex: 0 0 0px;
+}
+.dr-says{
+  display: none;
+}
+}
